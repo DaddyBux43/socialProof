@@ -1,0 +1,51 @@
+$primaryDM: hsl(300, 43%, 22%);
+$primaryP: hsl(333, 80%, 67%);
+$neutralDGM: hsl(303, 10%, 53%);
+$neutralLGM: hsl(300, 24%, 96%);
+$neutralW: hsl(0, 0%, 100%);
+$starC: hsl(28, 85%, 60%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@mixin card {
+    background: $primaryDM;
+    color: $neutralLGM;
+    padding: 10px;
+    border-radius: 10px;
+    height: 300px;
+    width: 450px;
+    // line-height: ;
+}
+
+@mixin rating {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 70px;
+    width: 550px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bolder;
+    background: $neutralLGM;
+
+}
+
+// @mixin rating {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 520px;
+//     height: 70px;
+//     background: $neutralLGM;
+//     border-radius: 8px;
+// }
